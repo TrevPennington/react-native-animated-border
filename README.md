@@ -1,4 +1,4 @@
-# react-native-animated-border
+# React Native Animated Gradient Border
 
 Animated border gradients for react native
 
@@ -7,16 +7,26 @@ Animated border gradients for react native
 ```sh
 npm install react-native-animated-border
 ```
+```sh
+yarn add react-native-animated-border
+```
 
 ## Usage
 
 
 ```js
-import { multiply } from 'react-native-animated-border';
+import { AnimatedBorderView } from 'react-native-animated-border';
 
 // ...
 
-const result = await multiply(3, 7);
+<AnimatedBorderView
+  style={styles.circleButton}
+  borderRadius={50}
+  borderWidth={2}
+  colors={['lightcoral', 'mistyrose', 'lightcoral']}
+>
+  <Text>Submit</Text>
+</AnimatedBorderView>
 ```
 
 
