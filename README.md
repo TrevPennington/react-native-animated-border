@@ -7,11 +7,11 @@ Performant animated border gradients for react native using reanimated and skia
 1. Install
 
 ```sh
-npm install react-native-animated-border
+npm install react-native-animated-gradient-border
 ```
 
 ```sh
-yarn add react-native-animated-border
+yarn add react-native-animated-gradient-border
 ```
 
 2. Ensure peer dependencies are installed:  

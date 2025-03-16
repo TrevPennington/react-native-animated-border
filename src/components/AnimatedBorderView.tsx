@@ -7,7 +7,7 @@ import {
   SweepGradient,
   RoundedRect,
 } from '@shopify/react-native-skia';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { StyleSheet, View, type ViewProps } from 'react-native';
 import {
   Easing,
@@ -46,12 +46,12 @@ export const AnimatedBorderView: React.FC<AnimatedBorderViewProps> = ({
   //   return adjusted;
   // }, [height, borderRadius, borderWidth]);
 
-  // const calculatedBorderRadiusCss = useCallback(() => {
-  //   if (!borderRadius) return;
-  //   // const percent = borderRadius / height;
-  //   // const adjusted = (height - borderWidth * 2) * percent;
-  //   return borderRadius - borderWidth;
-  // }, [borderRadius, borderWidth]);
+  const calculatedBorderRadiusCss = useCallback(() => {
+    if (!borderRadius) return;
+    // const percent = borderRadius / height;
+    // const adjusted = (height - borderWidth * 2) * percent;
+    return borderRadius - borderWidth;
+  }, [borderRadius, borderWidth]);
 
   useEffect(() => {
     rotation.value = withRepeat(
@@ -110,14 +110,14 @@ export const AnimatedBorderView: React.FC<AnimatedBorderViewProps> = ({
                   color="white"
                 />
                 {/* Clip */}
-                {/* <RoundedRect
+                <RoundedRect
                   x={borderWidth}
                   y={borderWidth}
                   width={width - borderWidth * 2}
                   height={height - borderWidth * 2}
                   r={calculatedBorderRadiusCss() ?? 0}
                   color="black"
-                /> */}
+                />
               </Group>
             }
           >
