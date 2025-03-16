@@ -1,21 +1,27 @@
 # React Native Animated Gradient Border
 
-Animated border gradients for react native
+Performant animated border gradients for react native using reanimated and skia
 
 ## Installation
+
+1. Install
 
 ```sh
 npm install react-native-animated-border
 ```
+
 ```sh
 yarn add react-native-animated-border
 ```
 
+2. Ensure peer dependencies are installed:  
+   [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/)  
+   [@shopify/react-native-skia](https://shopify.github.io/react-native-skia/docs/getting-started/installation)
+
 ## Usage
 
-
 ```js
-import { AnimatedBorderView } from 'react-native-animated-border';
+import { AnimatedBorderView } from 'react-native-animated-gradient-border';
 
 // ...
 
@@ -26,9 +32,8 @@ import { AnimatedBorderView } from 'react-native-animated-border';
   colors={['lightcoral', 'mistyrose', 'lightcoral']}
 >
   <Text>Submit</Text>
-</AnimatedBorderView>
+</AnimatedBorderView>;
 ```
-
 
 ## Contributing
 

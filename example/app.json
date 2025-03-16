@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "56a7882e-058b-4a2c-9562-c650b57e1e8f"
+      }
+    },
+    "owner": "trevorpennington"
   }
 }

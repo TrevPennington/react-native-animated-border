@@ -1,5 +1,5 @@
 {
-  "name": "react-native-animated-border",
+  "name": "react-native-animated-gradient-border",
   "version": "0.1.0",
   "description": "Animated border gradients for react native",
   "source": "./src/index.tsx",
@@ -37,7 +37,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-animated-border-example",
+    "example": "yarn workspace react-native-animated-gradient-border-example",
     "test": "jest",
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -52,14 +52,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TrevPennington/react-native-animated-border.git"
+    "url": "git+https://github.com/TrevPennington/react-native-animated-gradient-border.git"
   },
   "author": "Trevor Pennington <43477475+TrevPennington@users.noreply.github.com> (https://www.trevorpennington.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TrevPennington/react-native-animated-border/issues"
+    "url": "https://github.com/TrevPennington/react-native-animated-gradient-border/issues"
   },
-  "homepage": "https://github.com/TrevPennington/react-native-animated-border#readme",
+  "homepage": "https://github.com/TrevPennington/react-native-animated-gradient-border#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
@@ -183,5 +183,10 @@
     "languages": "js",
     "type": "library",
     "version": "0.48.3"
+  },
+  "dependencies": {
+    "@shopify/react-native-skia": "^1.11.9",
+    "expo-linear-gradient": "~14.0.2",
+    "react-native-reanimated": "^3.17.1"
   }
 }
