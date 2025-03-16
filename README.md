@@ -14,7 +14,7 @@ npm install react-native-animated-gradient-border
 yarn add react-native-animated-gradient-border
 ```
 
-2. Ensure peer dependencies are installed:  
+2. Ensure peer dependencies are installed (these require a new Expo build):
    [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/getting-started/)  
    [@shopify/react-native-skia](https://shopify.github.io/react-native-skia/docs/getting-started/installation)
 
